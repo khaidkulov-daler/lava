@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «lava»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «lava»</h1>
+		<div class="rootpage__info">
+			Описание проекта
+		</div>
+		<h2>Готоые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Главная</a></li>
+			<li><a target="_blank" href="about.html">О нас</a></li>
+			<li><a target="_blank" href="shop.html">Покупка</a></li>
+			<li><a target="_blank" href="shop-equipment.html">Покупка оборудования</a></li>
+			<li><a target="_blank" href="contacts.html">Контакты</a></li>
+			<li><a target="_blank" href="blog.html">Блог</a></li>
+			<li><a target="_blank" href="single-blog.html">Страница блога</a></li>
+			<li><a target="_blank" href="faq.html">FAQ</a></li>
+			<li><a target="_blank" href="404.html">404</a></li>
+			<li><a target="_blank" href="subcribe.html">Подписка</a></li>
+			<li><a target="_blank" href="cart.html">Корзина</a></li>
+		</ol>
+		<h2>Попапы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html#"></a></li>
+		</ol>
+		<div class="rootpage__tnx">
+			<h2>Спасибо за заказ!</h2>
+			<p>Буду рад хорошему отклику.</p>
+			<p>Обращайтесь еще!</p>
+		</div>
+		<div class="rootpage__contacts">
+			<h2>Мои контакты:</h2>
+			<p>Почта: <a href="mailto:khaidkulov.daler@icloud.com">khaidkulov.daler@icloud.com</a></p>
+			<p>Телефон: <a href="tel:+998906054181">+998 (90) 605-41-81</a></p>
+			<p>Соц. сети: <a href="https://t.me/+998906054181">Телеграм</a></p>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Manrope:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+	}
+
+	body {
+		font-family: Manrope;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+		background-color: #272727;
+		color: #747474;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #5b7065;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #c9d1c8;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #66a5ad;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #66a5ad;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		display: flex;
+		gap: 30px;
+		flex-wrap: wrap;
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__list a {
+		display: inline-block;
+		border-radius: 30px;
+		padding: 10px 20px;
+		background-color: #000;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	.rootpage__contacts h2,
+	.rootpage__tnx h2 {
+		color: #272727;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #ff652f;
+		color: #fff;
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #14a76c;
+		margin: 0px 0px 1rem 0px;
+		color: #fff;
+	}
+</style>
+
+</html>
